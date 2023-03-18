@@ -28,7 +28,8 @@ jobs:
       with:
         node-version: 18
     - run: |
-        npx html-minifier-terser --input-dir . --output-dir ./dist --collapse-whitespace --remove-comments --minify-js true --minify-css true
+        npx html-minifier-terser --input-dir . --output-dir ./dist --collapse-whitespace --remove-comments --minify-js true --minify-css true --file-ext html
+        npx html-minifier-terser --input-dir . --output-dir ./dist --collapse-whitespace --remove-comments --minify-js true --minify-css true --file-ext css
     - run: ls -la ./dist
     - run: cat ./dist/index.html
     - name: Setup Pages
