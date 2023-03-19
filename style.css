@@ -22,7 +22,6 @@ body{
     max-height: 0px;
     text-align: center;
     margin: 0 auto;
-    z-index: 1;
 }
 
 .list-option-menu{
@@ -195,6 +194,120 @@ footer h5{
     text-align: center;
     font-size: 17px;
     padding-top: 10px;
+}
+
+@media (min-width: 820px){
+    .logo-portfolio{
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+
+    .menu-responsive-portfolio{
+        display: none;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-portfolio{
+        overflow: none;
+        /* width: auto; */
+        transition: none;
+        max-height: none;
+        text-align: none;
+        margin: 10px;
+    }
+    .menu-portfolio ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .list-option-menu{
+        margin: 0  30px;
+        padding-bottom: 0;
+        border-bottom: none;
+
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    .container-infopersonal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        margin-top: 0;
+    }
+    .name-portfolio{
+        color: white;
+        font-size: 50px;
+        margin-bottom: 20px;
+        /* padding: 200px 0px; */
+    }
+    h2{
+        font-size: 30px;
+    }
+    .profesion{
+        font-size: 30px;
+    }
+    i{
+        font-size: 40px;
+    }
+    .container-aboutme{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        margin-top: 0;
+    }
+    .container-aboutme p{
+        font-size: 20px;
+        color: white;
+        padding: 0px 40px;
+    }
+    .container-projects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        text-align: center;
+        margin-top: 0;
+    }
+    .container-repo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-projects .container-card{
+        padding: 100px;
+        margin: 100px 20px;
+        /* opacity: .5; */
+    }
+    .container-contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        text-align: center;
+        margin-top: 0;
+    }
+    .container-contact .container{
+        padding: 100px;
+    }
+    .btn-enviar{
+        height: 80px;
+        padding-bottom: 15px;
+    }
 }
 
 
