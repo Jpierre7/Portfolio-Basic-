@@ -21,24 +21,24 @@
         <nav class="menu-portfolio" id="menu">
             <ul>
                 <li class="list-option-menu">
-                    <a href="#">Inicio</a>
-                </li>
-                <li class="list-option-menu">
-                    <a href="#">About Me</a>
+                    <a href="#container-infopersonal">Inicio</a>
                 </li class="list-option-menu">
                 <li class="list-option-menu">
-                    <a href="#">Projects</a>
-                </li>
+                    <a href="#container-aboutme">About Me</a>
+                </li class="list-option-menu">
                 <li class="list-option-menu">
-                    <a href="#">Contact</a>
+                    <a href="#container-projects">Projects</a>
+                </li class="list-option-menu">
+                <li class="list-option-menu">
+                    <a href="#container-contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <div class="container-infopersonal">
+    <div id="container-infopersonal">
         <div class="containeritem">
             <h1 class="name-portfolio">AARON GONZALO GONZALEZ NORIEGA</h1>
-            <h2>I'm a <span class="profesion">DESIGNER</span></h2>
+            <h2>I'm a <span class="profesion"></span></h2>
             <div class="container-icons">
                 <ul class="list-icons">
                     <li>
@@ -55,13 +55,13 @@
         </div>
     </div>
 
-    <div class="container-aboutme">
+    <div id="container-aboutme">
         <p class="text-aboutme">I'm software developer and Graphic designer, i'm working in the enterprise of donald
             trump. My skills are html,
             css, javascript and photoshop 👩‍💻🧔🍔</p>
     </div>
 
-    <div class="container-projects">
+    <div id="container-projects">
         <h1 class="title-project">Projects Done</h1>
         <div class="container-repo">
             <div class="container-card">
@@ -75,7 +75,7 @@
         </div>
     </div>
 
-    <div class="container-contact">
+    <div id="container-contact">
         <h1>Contact</h1>
         <div class="form-group container">
             <label class="title-form">Email</label>
@@ -89,11 +89,17 @@
     <footer>
         <h5>Aron Gonzalo Gonzalez Noriega - Florida 🧔</h5>
     </footer>
-
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script>
         document.querySelector('#button-show').addEventListener("click", function () {
             // alert('presiono')
             document.querySelector("#menu").classList.toggle("show")
+        })
+
+        let typedFormat = new Typed(".profesion", {
+            strings: ["Frontend", "Backend", "Designer", "FullStack"],
+            loop: true,
+            typeSpeed: 100
         })
     </script>
 </body>

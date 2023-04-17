@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: rgba(11, 30, 40) ;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -69,7 +71,7 @@ a {
     font-size: 20px;
 }
 
-.container-infopersonal{
+#container-infopersonal{
     width: 100%;
     height: 500px;
     text-align: center;
@@ -105,26 +107,26 @@ h2{
     margin: 10px;
 }
 
-.container-aboutme{
+#container-aboutme{
     width: 100%;
     height: 500px;
     text-align: center;
     margin-top: 50px;
 }
-.container-aboutme p{
+#container-aboutme p{
     font-size: 20px;
     color: white;
     padding: 200px 0px;
 }
 
-.container-projects{
+#container-projects{
     width: 100%;
     height: 500px;
     text-align: center;
     margin-top: 50px;
 }
 
-.container-projects .container-card{
+#container-projects .container-card{
     margin: 25px 10px;
     border: 1px solid rgb(22, 116, 97);
     border-radius: 5px;
@@ -132,20 +134,20 @@ h2{
     background: rgba(22, 116, 97, 0.1);
     /* opacity: .5; */
 }
-.container-projects .title-project{
+#container-projects .title-project{
     color: white;
 }
-.container-contact{
+#container-contact{
     width: 100%;
     height: 500px;
     /* text-align: center; */
     margin-top: 50px;
 }
-.container-contact h1{
+#container-contact h1{
     color: white;
     text-align: center;
 }
-.container-contact .container{
+#container-contact .container{
     margin: 50px 50px;
     display: flex;
     justify-content: center;
@@ -237,7 +239,10 @@ footer h5{
         color: white;
         font-size: 20px;
     }
-    .container-infopersonal{
+    a:hover{
+        color: rgb(22, 116, 97);
+    }
+    #container-infopersonal{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -260,7 +265,7 @@ footer h5{
     i{
         font-size: 40px;
     }
-    .container-aboutme{
+    #container-aboutme{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -268,12 +273,12 @@ footer h5{
         text-align: center;
         margin-top: 0;
     }
-    .container-aboutme p{
-        font-size: 20px;
+    #container-aboutme p{
+        font-size: 40px;
         color: white;
         padding: 0px 40px;
     }
-    .container-projects{
+    #container-projects{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -287,12 +292,12 @@ footer h5{
         justify-content: center;
         align-items: center;
     }
-    .container-projects .container-card{
+    #container-projects .container-card{
         padding: 100px;
         margin: 100px 20px;
         /* opacity: .5; */
     }
-    .container-contact{
+    #container-contact{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -301,7 +306,7 @@ footer h5{
         text-align: center;
         margin-top: 0;
     }
-    .container-contact .container{
+    #container-contact .container{
         padding: 100px;
     }
     .btn-enviar{
